@@ -261,3 +261,122 @@ img {
     order: -1;
   }
 }
+
+/* QUALIDADE */
+.qualidade {
+  max-width: 960px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+.qualidade-item h2 {
+  font-size: 2.25em;
+  color: var(--gray-h2-color);
+  margin: 20px;
+}
+.qualidade-item h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+  background: #000;
+}
+.qualidade-item:nth-of-type(3n + 1) h2::before {
+  background: var(--purple-color);
+}
+.qualidade-item:nth-of-type(3n + 2) h2::before {
+  background: var(--pink-color);
+}
+.qualidade-item:nth-of-type(3n + 3) h2::before {
+  background: var(--blue-color);
+}
+.qualidade-item p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: var(--gray-p-color);
+}
+
+/* NEWSLETTER */
+.newsletter {
+  background: var(--gray-bg-color);
+  padding: 60px calc((100% - 960px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 260px;
+  margin: 0 10px;
+}
+
+.newsletter-info h1 {
+  font-size: 3em;
+  color: var(--gray-h2-);
+}
+
+.newsletter-info p {
+  font-size: 1.25em;
+  font-style: italic;
+  max-width: 230px;
+  color: var(--gray-p-color);
+  margin-bottom: 10px;
+}
+.newsletter-form {
+  flex: 2 1 260px;
+  margin: 0 auto;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  outline: none;
+  flex: 3 1 200px;
+  font-size: 1.25em;
+  color: var(--gray-p-color);
+  font-style: italic;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  border: 4px solid var(--blue-menu-color);
+  background: transparent;
+  padding: 15px 10px;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.newsletter-form button {
+  flex: 1 1 200px;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 2.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: var(--blue-menu-color);
+  color: var(--white-color);
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  padding: 15px 10px;
+}
+@media (max-width: 600px) {
+  .newsletter-form button {
+    font-size: 1.5em;
+  }
+}
+/* FOOTER */
+.footer {
+  display: flex;
+  height: 100px;
+  background: var(--blue-menu-color);
+  align-items: center;
+}
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 1.25em;
+  color: var(--blue-superinfo-color);
+}
